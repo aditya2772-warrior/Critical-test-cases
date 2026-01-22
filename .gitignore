@@ -1,0 +1,18 @@
+# Maven
+target/
+**/target/
+
+# Karate / Chrome
+chrome_*
+**/chrome_*
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
