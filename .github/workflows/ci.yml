@@ -1,4 +1,4 @@
-name: Critical Karate CI
+name: Critical TC-Karate CI
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Upload Karate Report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: karate-report
           path: Learner-side/target/karate-reports
