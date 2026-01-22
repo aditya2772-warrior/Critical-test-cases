@@ -22,7 +22,7 @@ jobs:
 
       - name: Run Critical Karate Tests
         working-directory: Learner-side
-        run: mvn clean test -Dkarate.env=qa
+        run: mvn clean test -Dkarate.options="classpath:features/Critical.feature"
 
       - name: Upload Karate Report
         if: always()
