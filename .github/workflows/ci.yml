@@ -1,4 +1,4 @@
-name: Critical TC-Karate CI
+name: Critical Karate CI
 
 on:
   push:
@@ -20,7 +20,8 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Run Critical Tests
+      - name: Run Critical Karate Tests
+        working-directory: Learner-side
         run: mvn clean test -Dkarate.env=qa
 
       - name: Upload Karate Report
