@@ -1,8 +1,9 @@
 Feature: Logging to the page 
 Scenario: Valid Login
-  Given driver 'http://wfdapp.academian.com/'
-  And input("//input[@type='email']", 'aditya@academian.com')
+  Given driver 'http://www.aspedian.com/'
+  * delay(3000)
+  And input("//input[@type='email']", 'learner@academian.com')
   And input("//input[@type='password']", 'password123')
   And click("//button[@type='submit']")
   * delay(3000)
-  * waitForUrl('http://wfdapp.academian.com/home')
+  * waitForUrl('http://www.aspedian.com/home')

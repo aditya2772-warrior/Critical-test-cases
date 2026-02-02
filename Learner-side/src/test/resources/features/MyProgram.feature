@@ -162,7 +162,7 @@ Scenario:Verify Completed tab filters opening
     * click(loc.myProgramsTab)
     * waitFor("//button[text()='Completed']")
     * click("//button[text()='Completed']")
-  * click("//*[@id='root']/div/div/main/div/div[1]/div/div[2]/button/span")
+    * click("//*[@id='root']/div/div/main/div/div[1]/div/div[2]/button/span")
 @Medium
 Scenario: Verify Completed tab filter with Beginner skill level
     * click(loc.myProgramsTab)
