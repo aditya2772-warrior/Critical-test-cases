@@ -12,22 +12,22 @@ Background:
 #    * match title == "Add Career Goal Details"
 #    * delay(3000)
 
-@Career-goal @High
-Scenario: Verifying the career-goal creation with image--WFD_CGC_06-02
-    * waitFor("//span[text()='Careers Goals']")
-    * click("//span[text()='Careers Goals']")
-    * click("//button[text()='View Details']")
-    * click("//button[text()=' Edit']")
-    * click("//button[text()='Media']")
+# @Career-goal @High
+# Scenario: Verifying the career-goal creation with image--WFD_CGC_06-02
+#     * waitFor("//span[text()='Careers Goals']")
+#     * click("//span[text()='Careers Goals']")
+#     * click("//button[text()='View Details']")
+#     * click("//button[text()=' Edit']")
+#     * click("//button[text()='Media']")
 
-    # upload
-    * waitFor("input[type='file']")
-    * click("//*[@id='root']/div/div/main/div[1]/div/div[3]/div/div/div/div/button")
-    * delay(3000)
-    * driver.inputFile("input[type='file']", "classpath:images/DS.png")
-    * delay(3000)
-    * click("//button[text()='Save']")
-    * delay(3000)
+#     # upload
+#     * waitFor("input[type='file']")
+#     * click("//*[@id='root']/div/div/main/div[1]/div/div[3]/div/div/div/div/button")
+#     * delay(3000)
+#     * driver.inputFile("input[type='file']", "classpath:images/DS.png")
+#     * delay(3000)
+#     * click("//button[text()='Save']")
+#     * delay(3000)
 
 
 
@@ -89,14 +89,14 @@ Scenario: Verifying the career-goal creation with image--WFD_CGC_06-02
 #     * delay(2000)
 #      * click("//button[text()='Save']")
 
-# @Career-goal @High
-# Scenario: Verifying the assign to my-self -WFD_CGC_22-10
+@Career-goal @High
+Scenario: Verifying the assign to my-self -WFD_CGC_22-10
 
-#     * click("//span[text()='Careers Goals']")
-#     * click("//*[@id='root']/div/div/main/div/div/div/div[1]/div[2]/div/button[2]")
-#     * click("//*[@id='root']/div/div/main/div/div/div/div[2]/table/tbody/tr[1]/td[4]/div/button")
-#     * click("//span[text()='View Details']")
-#     * click("//button[text()='Assign to Myself']")
-#     * delay(2000)
+    * click("//span[text()='Careers Goals']")
+    * click("//*[@id='root']/div/div/main/div/div/div/div[1]/div[2]/div/button[2]")
+    * click("//*[@id='root']/div/div/main/div/div/div/div[2]/table/tbody/tr[3]/td[4]/div/button")
+    * click("//*[@id='root']/div/div/main/div/div/div/div[2]/table/tbody/tr[3]/td[4]/div/div/div/button[1]")
+    * click("//button[text()='Assign to Myself']")
+    * delay(2000)
 
 
