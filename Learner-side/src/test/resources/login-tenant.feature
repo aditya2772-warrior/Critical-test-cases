@@ -1,6 +1,4 @@
 Feature: Logging to the page 
-Background:
-     * configure driver = { type: 'chrome', addOptions: ['--start-maximized'] }
 Scenario: Valid Login
   Given driver 'http://www.aspedian.com/'
   And input("//input[@type='email']", 'tenantadmin@academian.com')
