@@ -2,7 +2,7 @@
 Feature: Regression Test Cases for My-Program-Tab-Page
 
 Background:
-    * call read('classpath:features/Login.feature')
+    * call read('classpath:login.feature')
     * def loc = call read('classpath:features/helpers/Locators.js')
 
 @Medium 

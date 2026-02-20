@@ -173,4 +173,31 @@ Background:
 #     * click("//button[text()='Update Program']")
 #     * delay(5000)
 
+@Course 
+Scenario: Verify Add Learning Summary Items
+    * click("//a[@href='/courses']")
+    * click("//button[text()='Create Course']")
+    * delay(2000)
+    * click("//input[@placeholder='Enter Course Title']")
+    * input("//input[@placeholder='Enter Course Title']",'TestCourse')
+    * waitFor("//div[@contenteditable='true']")
+    * click("//div[@contenteditable='true']")
+    * input("//div[@contenteditable='true']", 'This is my description text')
+    * delay(2000)
+      * retry(10, 1000).waitFor("//input[@placeholder='Enter key learning objective...']")
+      * retry(10, 1000).waitFor("//input[@placeholder='Enter key learning objective...']")
 
+      * def inputs = locateAll("//input[@placeholder='Enter key learning objective...']")
+
+      * inputs[0].click()
+      * inputs[0].input("First learning summary")
+
+      * inputs[1].click()
+      * inputs[1].input("Second learning summary")
+
+      * delay(3000)
+      * click("//button[text()=' Add more to your learning objectives']")
+      * delay(3000)
+      * click("//*[@id='root']/div/div/main/div/div/div[1]/div/div[3]/form/div[1]/div[3]/div/div[3]/button")
+      * delay(3000)
+      

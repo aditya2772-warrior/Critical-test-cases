@@ -30,7 +30,6 @@ Background:
 #     * delay(3000)
 
 
-
 # @Career-goal @High
 # Scenario:  Verifying the career-goal creation without image  -WFD_CGC_07-3  
 #     * click("//span[text()='Careers Goals']")
